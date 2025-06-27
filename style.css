@@ -17,6 +17,9 @@ a {
 img {
   max-width: 100%;
 }
+html {
+  scroll-behavior: smooth;
+}
 .container {
   width: 90%;
   max-width: 1100px;
@@ -36,11 +39,14 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .logo {
   display: flex;
   align-items: center;
   gap: 10px;
+  font-size: 22px;
+  font-weight: bold;
 }
 .logo img {
   height: 48px;
@@ -48,6 +54,7 @@ header {
 .nav-links {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .nav-links a {
   color: white;
@@ -97,6 +104,12 @@ h2 {
   font-size: 28px;
   margin-bottom: 20px;
 }
+ul {
+  text-align: left;
+  max-width: 700px;
+  margin: auto;
+  padding-left: 20px;
+}
 
 /* Services */
 .service-grid {
@@ -124,9 +137,9 @@ h2 {
   margin-top: 30px;
 }
 .demo-gallery img {
-  width: 100%;
   border-radius: 10px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  width: 100%;
 }
 
 /* Contact */
@@ -152,10 +165,10 @@ body.dark-mode {
   background: #121212;
   color: #eaeaea;
 }
-body.dark-mode .hero,
 body.dark-mode header,
-body.dark-mode footer,
-body.dark-mode .service-card {
+body.dark-mode .hero,
+body.dark-mode .service-card,
+body.dark-mode footer {
   background: #1c1c1c;
 }
 body.dark-mode .btn {
@@ -166,17 +179,8 @@ body.dark-mode .socials a {
   color: #eaeaea;
 }
 
-/* Responsive Nav for Mobile */
+/* Responsive text on small devices */
 @media screen and (max-width: 768px) {
-  .nav-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .nav-links {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-  }
   .hero h2 {
     font-size: 1.5rem;
   }
