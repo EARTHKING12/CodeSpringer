@@ -31,7 +31,7 @@
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- Hero Section -->
   <section class="hero" data-aos="fade-in">
     <div class="container">
       <h2>Professional Digital Services for Your Brand</h2>
@@ -41,22 +41,18 @@
   </section>
 
   <!-- About -->
-<section id="about" class="section" data-aos="fade-up">
-  <div class="container">
-    <h2>About Us</h2>
-    <p>
-      At <strong>CodeSpringer</strong>, we deliver modern, reliable, and impactful digital solutions tailored to your personal and professional needs. Whether you're an individual looking to build a standout resume or a brand aiming to establish a powerful online presence, we've got you covered.
-    </p>
-    <ul>
-      <p>🎯 <strong>Resume Design</strong> – Visually appealing, professional resumes that highlight your strengths.</p>
-      <p>🌐 <strong>Website Creation</strong> – Responsive, modern websites with functionality and style.</p>
-      <p>🎨 <strong>Logo Design</strong> – Unique, memorable logos that reflect your identity.</p>
-      <p>📌 <strong>Poster Design</strong> – Eye-catching designs for events, promotions, or branding.</p>
-    </ul>
-  </div>
-</section>
-
-
+  <section id="about" class="section" data-aos="fade-up">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>At CodeSpringer, we deliver modern, reliable, and impactful digital solutions tailored to your personal and professional needs.</p>
+      <ul>
+        <li>🎯 <strong>Resume Design</strong> – Visually appealing and professional.</li>
+        <li>🌐 <strong>Website Creation</strong> – Responsive and elegant.</li>
+        <li>🎨 <strong>Logo Design</strong> – Unique and memorable.</li>
+        <li>📌 <strong>Poster Design</strong> – Catchy and promotional.</li>
+      </ul>
+    </div>
+  </section>
 
   <!-- Services -->
   <section id="services" class="section" data-aos="fade-right">
@@ -109,8 +105,10 @@
 
     document.getElementById("themeToggle").onclick = () => {
       document.body.classList.toggle("dark-mode");
-      document.getElementById("themeToggle").innerHTML = 
-        document.body.classList.contains("dark-mode") ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+      document.getElementById("themeToggle").innerHTML =
+        document.body.classList.contains("dark-mode")
+          ? '<i class="fas fa-sun"></i>'
+          : '<i class="fas fa-moon"></i>';
     };
   </script>
 </body>
