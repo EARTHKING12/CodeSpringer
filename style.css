@@ -1,4 +1,4 @@
-/* Base Reset */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -129,7 +129,7 @@ ul {
   margin-bottom: 10px;
 }
 
-/* Demo Gallery */
+/* Demo */
 .demo-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -179,7 +179,7 @@ body.dark-mode .socials a {
   color: #eaeaea;
 }
 
-/* Responsive text on small devices */
+/* Responsive Fonts */
 @media screen and (max-width: 768px) {
   .hero h2 {
     font-size: 1.5rem;
