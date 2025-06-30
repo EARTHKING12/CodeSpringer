@@ -215,14 +215,57 @@ ul {
 }
 
 /* Contact */
-.socials a {
-  font-size: 24px;
-  margin: 0 10px;
+.contact-section {
+  background: #f8f9fa;
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 4px solid #4e73df;
+  border-radius: 20px;
+}
+
+.contact-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-details p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #222;
+}
+
+.contact-details i {
+  color: #4e73df;
+  margin-right: 8px;
+}
+
+.contact-details a {
   color: #111;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
+
+.contact-details a:hover {
+  color: #4e73df;
+}
+
+.socials {
+  margin-top: 20px;
+}
+
+.socials a {
+  font-size: 1.8rem;
+  margin: 0 12px;
+  color: #555;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
 .socials a:hover {
-  color: #0077b6;
+  color: #4e73df;
+  transform: scale(1.2);
 }
+
 
 /* Footer */
 footer {
@@ -233,30 +276,74 @@ footer {
 }
 
 /* Dark Mode */
+/* Dark Mode */
 body.dark-mode {
   background: #121212;
   color: #eaeaea;
 }
+/* Fix for dark mode contact text visibility */
+body.dark-mode .contact-details a,
+body.dark-mode .contact-details p {
+  color: #eaeaea;
+}
+
+body.dark-mode .contact-details a:hover {
+  color: #00bcd4;
+}
+
+body.dark-mode .contact-section h2 {
+  color: #ffffff;
+}
+
+
+/* Header, Hero, Footer, Cards, and Section backgrounds */
 body.dark-mode header,
 body.dark-mode .hero,
 body.dark-mode footer,
+body.dark-mode .section,
+body.dark-mode #services,
 body.dark-mode .service-card {
-  background: #1c1c1c;
+  background: #1e1e1e;
+  color: #eaeaea;
 }
+
+/* Button styling */
 body.dark-mode .btn {
   background: #00bcd4;
   color: #001f3f;
 }
+
+/* Nav Links & Social Icons */
+body.dark-mode .nav-links a,
 body.dark-mode .socials a {
   color: #eaeaea;
 }
-body.dark-mode .service-card h3 {
-  color: #e0e0e0;
+
+/* Hover effect for nav links */
+body.dark-mode .nav-links a:hover {
+  color: #00bcd4;
 }
+
+/* Headings in dark mode */
+body.dark-mode h2::after {
+  background: linear-gradient(to right, #00bcd4, #5eead4, #ff6b6b, #9ae6b4);
+}
+
+/* Demo Gallery images - optional darker overlay if needed */
+body.dark-mode .demo-gallery img {
+  box-shadow: 0 3px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Service card icons */
 body.dark-mode .service-card:nth-child(1) i { color: #00bcd4; }
 body.dark-mode .service-card:nth-child(2) i { color: #5eead4; }
 body.dark-mode .service-card:nth-child(3) i { color: #ff6b6b; }
 body.dark-mode .service-card:nth-child(4) i { color: #9ae6b4; }
+
+body.dark-mode .service-card h3 {
+  color: #eaeaea;
+}
+
 
 /* Responsive */
 @media screen and (max-width: 768px) {
